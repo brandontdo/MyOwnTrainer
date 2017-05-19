@@ -1,4 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.example.sportshack">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.myowntrainer">
 
     <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="21"/>
 
@@ -12,23 +12,27 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
-    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
-        <activity android:label="@string/app_name" android:name="com.example.sportshack.MainActivity">
+    <application android:allowBackup="true" android:icon="@drawable/applogo" android:label="@string/app_name" android:largeHeap="true" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <activity android:label="@string/app_name" android:name="com.myowntrainer.MainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:label="@string/title_activity_excercises" android:name="com.example.sportshack.ExcerciseListActivity">
+        <activity android:label="@string/title_activity_excercises" android:name="com.myowntrainer.ExerciseListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
-        <activity android:label="@string/title_activity_progress_activities" android:name="com.example.sportshack.ProgressActivity">
+        <activity android:label="@string/title_activity_progress_activities" android:name="com.myowntrainer.ProgressActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
-        <activity android:label="@string/title_activity_friends" android:name="com.example.sportshack.FriendsActivity">
+        <activity android:label="@string/title_activity_friends" android:name="com.myowntrainer.FriendsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
-        <activity android:label="@string/title_activity_leader_board" android:name="com.example.sportshack.LeaderBoardActivity">
+        <activity android:label="@string/title_activity_leader_board" android:name="com.myowntrainer.LeaderBoardActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
-        <activity android:label="@string/title_activity_excercise" android:name="com.example.sportshack.ExcerciseActivity">
+        <activity android:label="@string/title_activity_excercise" android:name="com.myowntrainer.ExerciseActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        </activity>
+        <activity android:label="@string/title_activity_challenge" android:name="com.myowntrainer.Challenge" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        </activity>
+        <activity android:label="@string/title_activity_challenge" android:name="com.myowntrainer.ChallengeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         </activity>
 
         <activity android:label="@string/myosdk__title_activity_scan" android:name="com.thalmic.myo.scanner.ScanActivity" android:theme="@style/myosdk__ScanActivityTheme"/>

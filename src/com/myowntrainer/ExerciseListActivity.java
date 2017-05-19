@@ -1,16 +1,16 @@
 package com.myowntrainer;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 
-public class ExcerciseActivity extends Activity {
+public class ExerciseListActivity extends Activity {
 
-    LinearLayout ll;
-    String exercise = ExcerciseListActivity.excercise_entered;
-    int reps;
+    public static String excercise_entered = null;
+	LinearLayout ll;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,12 +19,13 @@ public class ExcerciseActivity extends Activity {
                                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceState);
         ll = new LinearLayout(this);
-        ll.addView(new ExcercisePanel(this, exercise));
+        ll.addView(new ExerciseListPanel(this));
         setContentView(ll);
-        reps = 4;
     }
-    
-    public void setReps(int val){
-    	this.reps = val;
+
+    public void Exercise(String str) {
+        Intent intent = new Intent(this, ExerciseActivity.class);
+        excercise_entered = str;
+        this.startActivity(intent);
     }
 }

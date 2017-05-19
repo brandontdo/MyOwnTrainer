@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">sportshack</string>
+    <string name="app_name">MYOwnTrainer</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_excercises">ExcercisesActivity</string>
@@ -9,5 +9,6 @@
     <string name="title_activity_friends">FriendsActivity</string>
     <string name="title_activity_leader_board">LeaderBoardActivity</string>
     <string name="title_activity_excercise">ExcerciseActivity</string>
+    <string name="title_activity_challenge">Challenge</string>
 
 </resources>

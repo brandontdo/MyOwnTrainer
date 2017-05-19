@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.sportshack"
+    package="com.myowntrainer"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -20,10 +20,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/applogo"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:largeHeap="true"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+        android:screenOrientation="portrait">
         <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
             android:name=".MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
@@ -33,24 +37,46 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ExcerciseListActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            android:name=".ExerciseListActivity"
             android:label="@string/title_activity_excercises" >
         </activity>
         <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
             android:name=".ProgressActivity"
             android:label="@string/title_activity_progress_activities" >
         </activity>
         <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
             android:name=".FriendsActivity"
             android:label="@string/title_activity_friends" >
         </activity>
         <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
             android:name=".LeaderBoardActivity"
             android:label="@string/title_activity_leader_board" >
         </activity>
         <activity
-            android:name=".ExcerciseActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            android:name=".ExerciseActivity"
             android:label="@string/title_activity_excercise" >
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            android:name=".Challenge"
+            android:label="@string/title_activity_challenge" >
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            android:name=".ChallengeActivity"
+            android:label="@string/title_activity_challenge" >
         </activity>
     </application>
 
